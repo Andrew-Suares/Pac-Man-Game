@@ -15,5 +15,25 @@ body {
 .grid div {
 	width: 15px;
 	height: 15px;
+}
+.pac-dot {
+	background: green;
+	border: 5px solid white;
+	/* Puts the border on inside of the square */
+	box-sizing: border-box;
+}
+
+.wall {
 	background: blue;
+}
+
+.power-pellet {
+	background: green;
+	border-radius: 7.5px;
+}
+
+.pacman {
+	background: gold;
+	border-radius: 7.5px;
+	border: 0;
 }
