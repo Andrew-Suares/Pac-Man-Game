@@ -70,14 +70,29 @@ squares[pacmanCurrentIndex].classList.add('pacman')
 
 // Game controls
 function control(e) {
-	if (e.key === 'ArrowDown') {
-		console.log('pressed down')
-	} else if (e.keyCode === 38) {
-		console.log('pressed up')
-	} else if (e.keyCode === 37) {
-		console.log('pressed left')
-	} else if (e.keyCode === 39) {
-		console.log('right')
+	// if (e.key === 'ArrowDown') {
+	// 	console.log('pressed down')
+	// } else if (e.key === 'ArrowUp') {
+	// 	console.log('pressed up')
+	// } else if (e.key === 'ArrowLeft') {
+	// 	console.log('pressed left')
+	// } else if (e.key === 'ArrowRight') {
+	// 	console.log('right')
+	// }
+	// Instead use Switch Statements
+	switch (e.key) {
+		case 'ArrowDown':
+			console.log('pressed down')
+			break
+		case 'ArrowUp':
+			console.log('pressed up')
+			break
+		case 'ArrowRight':
+			console.log('pressed right')
+			break
+		case 'ArrowLeft':
+			console.log('pressed left')
+			break
 	}
 }
 document.addEventListener('keyup', control)
